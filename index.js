@@ -74,6 +74,12 @@ async function run() {
             const accessories = await cursor.toArray();
             res.send(accessories);
         });
+        // GET API -  accessories
+        app.get('/reviews', async (req, res) => {
+            const cursor = reviewCollection.find({});
+            const reviews = await cursor.toArray();
+            res.send(reviews);
+        });
 
 
 
