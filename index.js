@@ -49,6 +49,7 @@ async function run() {
         // collection or simply a table
         const productCollection = database.collection('products');
         const accessoriesCollection = database.collection('accessories');
+        const reviewCollection = database.collection('reviews');
         const orderCollection = database.collection('orders');
         const userCollection = database.collection('users');
 
@@ -129,6 +130,17 @@ async function run() {
             const accessory = req.body;
             // insertion of one data
             const result = await accessoriesCollection.insertOne(accessory);
+            console.log(result);
+            // sending the data
+            res.json(result)
+
+        });
+        // POST API -- review will be added(new)
+        app.post('/reviews', async (req, res) => {
+
+            const review = req.body;
+            // insertion of one data
+            const result = await reviewCollection.insertOne(review);
             console.log(result);
             // sending the data
             res.json(result)
