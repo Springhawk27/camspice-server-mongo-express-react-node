@@ -147,7 +147,7 @@ async function run() {
             const review = req.body;
             // insertion of one data
             const result = await reviewCollection.insertOne(review);
-            console.log(result);
+            // console.log(result);
             // sending the data
             res.json(result)
 
