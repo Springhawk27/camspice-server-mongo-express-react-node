@@ -6,6 +6,11 @@ live link: https://camspice-3c20d.web.app/
 
 ## This Project consists of:
 
+-	A complete and responsive MERN stack  niche ecommerce website.
+-	With admin dashboard and functionality, admin can set role, add and delete product. Admin also can manage, delete and approve an order.
+-	Implemented REST API on this system. Used MongoDb as database.
+-	Firebase authentication added for registration, sign in and google sign in. Firebase used for client side deployment and Heroku for server deployment
+
 - HTML
 - CSS
 - Javascript
